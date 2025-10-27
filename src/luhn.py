@@ -12,7 +12,7 @@ def luhn_check(number_card):
     # Убираем все нецифровые символы
     digits = [int(d) for d in str(number_card) if d.isdigit()]
 
-    control = digits.pop() # Контрольная цифра
+    control = digits.pop()  # Контрольная цифра
     parity = (len(digits)) % 2
     total = 0
 
@@ -26,6 +26,7 @@ def luhn_check(number_card):
             total += digits[i]
 
     return (total + control) % 10 == 0
+
 
 def main():
     """Консольная утилита на основе алгоритма Луна для проверки номеров карт"""
@@ -54,6 +55,7 @@ def main():
         except KeyboardInterrupt:
             print("\nВыход из программы")
             break
+
 
 if __name__ == "__main__":
     main()
