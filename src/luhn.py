@@ -42,7 +42,7 @@ def main():
 
             # Проверяем, что ввод не пустой
             if not user_input:
-                print("Ошибка, введите номер карты)
+                print("Ошибка, введите номер карты")
                 continue
             # Проверяем номер карты
             if luhnСheck(user_input):
