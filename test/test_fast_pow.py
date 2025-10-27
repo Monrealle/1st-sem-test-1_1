@@ -16,3 +16,4 @@ def test_extreme_cases(): # Крайние случаи
 
 def test_property_based_tests(): # Property based тесты
     assert fastPow(7, 4) == 7 ** 4
+    assert fastPow(23, 0) == 23 ** 0
