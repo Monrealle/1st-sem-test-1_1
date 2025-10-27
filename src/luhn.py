@@ -1,4 +1,4 @@
-def luhnСheck(number_card):
+def luhn_check(number_card):
     """
     Проверяет ввод по алгоритму Луна
 
@@ -45,7 +45,7 @@ def main():
                 print("Ошибка, введите номер карты")
                 continue
             # Проверяем номер карты
-            if luhnСheck(user_input):
+            if luhn_check(user_input):
                 print("Correct")
 
             else:
